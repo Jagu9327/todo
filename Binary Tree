@@ -1,0 +1,23 @@
+Function levelOrder(root:TreeNode | null): number[][]{
+let res : number[][] = [];
+let q :TreeNode[] = [];
+q : push(root);
+
+while (q.lenght>0){
+let currLevelCount =q.lenght);
+let currLevelPeople:number[] =[];
+while(currLeveCount >0){
+let currNode:TreeNode = q.shift();
+
+currLevelPeople: push(currNode.val);
+
+if(currNode.left != null) q.push(currNode.left);
+if(currNode.right != null) q.push(currNode.right);
+
+currLevelCount--;
+}
+res.push(currLevelPeople);
+}
+return res;
+};
+
